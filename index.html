@@ -8,6 +8,19 @@
     <title>Dark Mode</title>
     <link rel="stylesheet" href="style.css">
     <script src="darkMode.js" defer></script>
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
 </head>
 
 <body id="body" class="body-light">
