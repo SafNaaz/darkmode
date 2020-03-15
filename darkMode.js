@@ -1,7 +1,6 @@
 function toggleDarkMode() {
     var body = document.getElementById('body')
     var button = document.getElementById('dark-mode-button')
-    var navBar = document.getElementById('nav-bar')
     if (body.className == 'body-light') {
         body.className = 'body-dark'
         button.innerHTML = '🌞'
@@ -17,7 +16,6 @@ let anchorlinks = document.querySelectorAll('a[href^="#"]')
 
 for (let item of anchorlinks) {
     item.addEventListener('click', (e) => {
-        console.log('item')
         let hashval = item.getAttribute('href')
         let target = document.querySelector(hashval)
         target.scrollIntoView({
@@ -30,3 +28,16 @@ for (let item of anchorlinks) {
     })
 }
 //new codes add below
+
+
+window.onload = function  switchMode(){
+var today = new Date()
+var time = today.getHours()
+if(time < 6 || time >20){
+	var body = document.getElementById('body')
+	var button = document.getElementById('dark-mode-button')
+	body.className = 'body-dark'
+        button.innerHTML = '🌞'
+        button.title = 'lights on'
+		}
+}
