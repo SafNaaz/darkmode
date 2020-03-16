@@ -17,15 +17,15 @@ function toggleDarkMode() {
 
 
 function setMode(value) {
-   if (window.localStorage.getItem('mode') != value) {
-    window.localStorage.setItem('mode', value);
+   if (sessionStorage.getItem('mode') != value) {
+       sessionStorage.setItem('mode', value);
   }
 }
 
 function getMode() {
     myValue = null;
-    if (localStorage.getItem('mode')) {
-        myValue = localStorage.getItem('mode');
+    if (sessionStorage.getItem('mode')) {
+        myValue = sessionStorage.getItem('mode');
     }
      return myValue;
 }
