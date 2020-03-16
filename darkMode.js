@@ -56,8 +56,10 @@ window.onload = function switchMode() {
 		body.className = 'body-dark'
 		button.innerHTML = '🌞'
 		button.title = 'lights on'
-		setMode('dark')
+		//setMode('dark')
+                alert('getmode')
 	}else{
+                alert('time mode')
 		var today = new Date()
 		var time = today.getHours()
 		if (time < 6 || time > 20) {
