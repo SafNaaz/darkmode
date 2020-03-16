@@ -17,14 +17,16 @@ function toggleDarkMode() {
 
 
 function setMode(value) {
+   if (localStorage.getItem('mode') != value) {
     localStorage.setItem('mode', value);
+  }
 }
 
 function getMode() {
     myValue = null;
-    if (localStorage.getItem('mode')) {
+    //if (localStorage.getItem('mode')) {
         myValue = localStorage.getItem('mode');
-    }
+    //}
 	return myValue;
 }
 
