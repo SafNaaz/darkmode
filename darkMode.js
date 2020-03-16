@@ -50,7 +50,7 @@ for (let item of anchorlinks) {
 
 window.onload = function switchMode() {
 	
-	if(!getMode() === null){
+	if(!(getMode() === null)){
 		toggleDarkMode()
 	}else{
 		var today = new Date()
