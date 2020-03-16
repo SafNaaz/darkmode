@@ -92,7 +92,7 @@ body {
 /* navigator start */
 
 #navigator{
-    margin-top: 70px;
+    /*margin-top: 70px;*/
     text-align: left;
 }
 
@@ -108,7 +108,7 @@ body {
 /* navigator end */
 
 #header {
-  /* margin-top: 70px; */
+   margin-top: 70px;
 }
 
 h2 {
