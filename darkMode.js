@@ -24,8 +24,8 @@ function setMode(value) {
 
 function getMode() {
     myValue = null;
-    if (window.localStorage.getItem('mode')) {
-        myValue = window.localStorage.getItem('mode');
+    if (localStorage.getItem('mode')) {
+        myValue = localStorage.getItem('mode');
     }
      return myValue;
 }
