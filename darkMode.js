@@ -6,12 +6,12 @@ function toggleDarkMode() {
         body.className = 'body-dark'
         button.innerHTML = '🌞'
         button.title = 'lights on'
-		setMode('dark');
+	setMode('dark')
     } else {
         body.className = 'body-light'
         button.innerHTML = '🌙'
         button.title = 'dark mode'
-		setMode('light');
+	setMode('light')
     }
 }
 
@@ -54,7 +54,7 @@ window.onload = function switchMode() {
 		body.className = 'body-dark'
 		button.innerHTML = '🌞'
 		button.title = 'lights on'
-		setMode('dark');
+		setMode('dark')
 	}else{
 		var today = new Date()
 		var time = today.getHours()
@@ -64,7 +64,7 @@ window.onload = function switchMode() {
 			body.className = 'body-dark'
 			button.innerHTML = '🌞'
 			button.title = 'lights on'
-			setMode('dark');
+			setMode('dark')
 		}
 	}
 }
