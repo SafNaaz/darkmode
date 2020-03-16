@@ -24,11 +24,10 @@ function setMode(value) {
 
 function getMode() {
     myValue = null;
-    //if (window.localStorage.getItem('mode')) {
+    if (window.localStorage.getItem('mode')) {
         myValue = window.localStorage.getItem('mode');
-    //}
-	alert('mode from cache'+myValue);
-       return myValue;
+    }
+     return myValue;
 }
 
 let anchorlinks = document.querySelectorAll('a[href^="#"]')
@@ -57,10 +56,7 @@ window.onload = function switchMode() {
 		body.className = 'body-dark'
 		button.innerHTML = '🌞'
 		button.title = 'lights on'
-		//setMode('dark')
-                alert('getmode')
 	}else{
-                alert('time mode')
 		var today = new Date()
 		var time = today.getHours()
 		if (time < 6 || time > 20) {
@@ -69,7 +65,6 @@ window.onload = function switchMode() {
 			body.className = 'body-dark'
 			button.innerHTML = '🌞'
 			button.title = 'lights on'
-			setMode('dark')
 		}
 	}
 }
