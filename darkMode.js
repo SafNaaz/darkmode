@@ -51,7 +51,19 @@ for (let item of anchorlinks) {
 window.onload = function switchMode() {
 	
 	if(!(getMode() === null)){
-		toggleDarkMode()
+		var body = document.getElementById('body')
+    var button = document.getElementById('dark-mode-button')
+	if (getMode() == 'dark') {
+        body.className = 'body-dark'
+        button.innerHTML = '🌞'
+        button.title = 'lights on'
+	
+    } else {
+        body.className = 'body-light'
+        button.innerHTML = '🌙'
+        button.title = 'dark mode'
+	
+    }
 	}else{
 		var today = new Date()
 		var time = today.getHours()
