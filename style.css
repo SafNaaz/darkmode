@@ -127,7 +127,7 @@ h3 {
   padding: 0px 20px;
   position: -webkit-sticky;
   position: sticky;
-  top:60px;
+  top:0px;
   opacity: 0.9;
   transition: 0.4s;
 }
