@@ -27,7 +27,8 @@ function getMode() {
     //if (window.localStorage.getItem('mode')) {
         myValue = window.localStorage.getItem('mode');
     //}
-	return myValue;
+	alert('mode from cache'+myValue);
+       return myValue;
 }
 
 let anchorlinks = document.querySelectorAll('a[href^="#"]')
