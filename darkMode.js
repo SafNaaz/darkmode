@@ -84,8 +84,10 @@ window.onload = function switchMode() {
      if (currentScrollPos > 0) {
          if (prevScrollpos > currentScrollPos) {
              document.getElementById("navigation").style.top = "0";
+             document.getElementById("footer").style.bottom = "0";
          } else {
              document.getElementById("navigation").style.top = "-70px";
+             document.getElementById("footer").style.bottom = "-70px";
          }
          prevScrollpos = currentScrollPos;
      }
