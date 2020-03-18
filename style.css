@@ -9,7 +9,10 @@ body {
 body,
 a,
 #navigation,
-#footer {
+#footer,
+#shareBtn,
+#sharelinks
+ {
   transition: 0.4s;
 }
 
