@@ -11,4 +11,5 @@ functionalities
 6. content navigation menu with sticky mode for headings
 7. responsive design
 8. Share button to all popular social media with dynamic url embedding
+
 ............
