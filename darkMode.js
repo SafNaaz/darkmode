@@ -121,3 +121,30 @@ const scrollToTop = () => {
 
 /* go to top button - ends*/
 
+/* share button - starts*/
+// var shareBtn = document.getElementById('shareBtn');
+// shareBtn.addEventListener('mouseover', (e) => {
+//     let sharelinks = document.getElementById("sharelinks");
+//     if (sharelinks.style.display == 'none'||sharelinks.style.display == '') {
+//         sharelinks.style.display = 'flex';
+//     }else {
+//         sharelinks.style.display = 'none';
+//     }
+// });
+
+//revisit clickability and hoverability
+
+function share() {
+    let sharelinks = document.getElementById("sharelinks");
+        if (sharelinks.style.display == 'none'||sharelinks.style.display == '') {
+            sharelinks.style.display = 'flex';
+        }else {
+            sharelinks.style.display = 'none';
+        }
+}
+
+function buildURI(item){
+    item.setAttribute('href', item.href + window.location.href);
+}
+
+/* share button - ends*/

@@ -18,15 +18,9 @@
             <a id="name" href="index.html"><strong>Safnas</strong></a>
         </div>
         <div class="navItems">
-            <!-- <li> -->
             <a href="index.html">Home</a>
-            <!-- </li> -->
-            <!-- <li> -->
             <a href="index.html">About</a>
-            <!-- </li> -->
-            <!-- <li> -->
             <a href="mailto:blabla@bla.com">Contact Me</a>
-            <!-- </li> -->
             <button onclick="toggleDarkMode()" title="dark mode" id="dark-mode-button">🌙</button>
         </div>
     </div>
@@ -51,6 +45,13 @@
     </nav>
 
     <button onclick="goToTopFunction()" id="goToTopBtn" title="Go to top">Top</button>
+    <button onmouseover="share()" id="shareBtn" title="Share to"><img src="share24.png"></button>
+    <div id="sharelinks">
+        <a onclick="buildURI(this)" href="https://www.facebook.com/sharer/sharer.php?u=" class="sharelink"
+            target="_blank" title="Facebook"><img src="facebook32.png" /></a>
+        <a onclick="buildURI(this)" href="https://wa.me/whatsappphonenumber/?text=" class="sharelink" target="_blank"
+            title="WhatsApp"><img src="whatsapp24.png"></a>
+    </div>
 
     <div class="content">
         <h3 id="what">What is html?</h3>
@@ -141,11 +142,11 @@
     </div>
 
     <div id="footer" class="footer">
-        <a href="https://www.facebook.com/" class="icon" target="_blank"><img src="facebook32.png"/> </a>
-        <a href="https://www.instagram.com//" class="icon" target="_blank"><img src="instagram32.png"/> </a>
-        <a href="https://mobile.twitter.com/" class="icon" target="_blank"><img src="twitter32.png"/> </a>
-        <a href="https://github.com/" class="icon" target="_blank"><img src="github32.png"/> </a>
-        <a href="https://www.linkedin.com/in/" class="icon" target="_blank"><img src="linkedin32.png"/> </a>
+        <a href="https://www.twitter.com" class="icon" target="_blank"><img src="facebook32.png" /></a>
+        <a href="https://www.twitter.com" class="icon" target="_blank"><img src="instagram32.png" /></a>
+        <a href="https://www.twitter.com" class="icon" target="_blank"><img src="twitter32.png" /></a>
+        <a href="https://www.twitter.com" class="icon" target="_blank"><img src="github32.png" /></a>
+        <a href="https://www.twitter.com" class="icon" target="_blank"><img src="linkedin32.png" /></a>
     </div>
 
 </body>

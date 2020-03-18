@@ -217,3 +217,54 @@ h3 {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 /* scroll to top button ends */
+
+/* share button code starts*/
+#shareBtn{
+  position: fixed;
+  top: 85px; /* Place the button at the bottom of the page */
+  right: 35px; /* Place the button 30px from the right */
+  z-index: 99;
+  opacity: 0.9;
+  background-color: transparent;
+  border-style: none;
+  outline: 0;
+}
+
+.body-dark #shareBtn {
+  filter: invert(100%);
+}
+
+@media (min-width: 1100px) {
+  #shareBtn {
+    right: 250px;
+  }
+}
+
+#sharelinks{
+  position: fixed;
+  display:none;
+  top: 125px; /* Place the button at the bottom of the page */
+  right: 35px; /* Place the button 30px from the right */
+  z-index: 99;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* animate down */
+}
+
+.body-dark #sharelinks {
+  filter: invert(100%);
+}
+
+.sharelink{
+  padding: 5px 0;
+}
+
+@media (min-width: 1100px) {
+  #sharelinks {
+    right: 250px;
+  }
+}
+
+/* share button code ends*/
+
