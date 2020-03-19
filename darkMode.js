@@ -83,9 +83,14 @@ window.onscroll = function () {
         if (prevScrollpos > currentScrollPos) {
             document.getElementById(navigationBarId).style.top = "0";
             document.getElementById(footerId).style.bottom = "0";
+            document.getElementById("shareBtn").style.top = "85px"
+            document.getElementById("sharelinks").style.top = "115px"
+
         } else {
             document.getElementById(navigationBarId).style.top = "-70px";
             document.getElementById(footerId).style.bottom = "-70px";
+            document.getElementById("shareBtn").style.top = "10px"
+            document.getElementById("sharelinks").style.top = "40px"
         }
         prevScrollpos = currentScrollPos;
     }
@@ -122,29 +127,24 @@ const scrollToTop = () => {
 /* go to top button - ends*/
 
 /* share button - starts*/
-// var shareBtn = document.getElementById('shareBtn');
-// shareBtn.addEventListener('mouseover', (e) => {
-//     let sharelinks = document.getElementById("sharelinks");
-//     if (sharelinks.style.display == 'none'||sharelinks.style.display == '') {
-//         sharelinks.style.display = 'flex';
-//     }else {
-//         sharelinks.style.display = 'none';
-//     }
-// });
-
-//revisit clickability and hoverability
 
 function share() {
     let sharelinks = document.getElementById("sharelinks");
-        if (sharelinks.style.display == 'none'||sharelinks.style.display == '') {
-            sharelinks.style.display = 'flex';
-        }else {
-            sharelinks.style.display = 'none';
-        }
+    if (sharelinks.style.display == 'none' || sharelinks.style.display == '') {
+        sharelinks.style.display = 'flex';
+    } else {
+        sharelinks.style.display = 'none';
+    }
 }
 
-function buildURI(item){
-    item.setAttribute('href', item.href + window.location.href);
+function buildURI(item) {
+    if (item.href == 'mailto:?') {
+        subject = 'subject=' + document.getElementById('header').innerText;
+        body = "&body=Check out at this url : " + window.location.href;
+        item.setAttribute('href', item.href + subject + body);
+    } else {
+        item.setAttribute('href', item.href + window.location.href);
+    }
 }
 
 /* share button - ends*/

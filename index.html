@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Safnas</title>
+    <meta name="description" content="Template with dark mode & animated navigation">
+    <title>Author</title>
+
     <link rel="stylesheet" href="style.css">
     <script src="darkMode.js" defer></script>
 </head>
@@ -15,7 +17,7 @@
     <div id="navigation">
         <div id="brand">
             <a id="navbrand" href="index.html">😎</a>
-            <a id="name" href="index.html"><strong>Safnas</strong></a>
+            <a id="name" href="index.html"><strong>Author</strong></a>
         </div>
         <div class="navItems">
             <a href="index.html">Home</a>
@@ -45,13 +47,15 @@
     </nav>
 
     <button onclick="goToTopFunction()" id="goToTopBtn" title="Go to top">Top</button>
-    <button onmouseover="share()" id="shareBtn" title="Share to"><img src="share24.png"></button>
-    <div id="sharelinks">
-        <a onclick="buildURI(this)" href="https://www.facebook.com/sharer/sharer.php?u=" class="sharelink"
-            target="_blank" title="Facebook"><img src="facebook32.png" /></a>
-        <a onclick="buildURI(this)" href="https://wa.me/?text=" class="sharelink" target="_blank"
-            title="WhatsApp"><img src="whatsapp24.png"></a>
-    </div>
+        <button onclick="share()" id="shareBtn" title="Share to"><img src="share.png"></button>
+        <div id="sharelinks">
+            <a onclick="buildURI(this)" href="https://www.facebook.com/sharer/sharer.php?u=" class="sharelink"
+                target="_blank" title="Facebook"><img src="facebook32.png" /></a>
+            <a onclick="buildURI(this)" href="https://wa.me/whatsappphonenumber/?text=" class="sharelink" target="_blank"
+                title="WhatsApp"><img src="whatsapp24.png"></a>
+            <a onclick="buildURI(this)" href="mailto:?" class="sharelink" target="_blank"
+                title="Mail"><img src="envelope.png"></a>
+        </div>
 
     <div class="content">
         <h3 id="what">What is html?</h3>
@@ -142,11 +146,12 @@
     </div>
 
     <div id="footer" class="footer">
-        <a href="https://www.facebook.com/" class="icon" target="_blank"><img src="facebook32.png"/></a>
-        <a href="https://www.instagram.com/" class="icon" target="_blank"><img src="instagram32.png"/></a>
-        <a href="https://www.twitter.com/" class="icon" target="_blank"><img src="twitter32.png"/></a>
-        <a href="https://www.github.com/" class="icon" target="_blank"><img src="github32.png"/></a>
-        <a href="https://www.linkedin.com/" class="icon" target="_blank"><img src="linkedin32.png"/></a>
+        <a href="https://www.facebook.com/" class="icon" target="_blank" title="facebook"><img src="facebook32.png"/></a>
+        <a href="https://www.instagram.com/" class="icon" target="_blank" title="instagram"><img src="instagram32.png"/></a>
+        <a href="https://www.twitter.com/" class="icon" target="_blank" title="twitter"><img src="twitter32.png"/></a>
+        <a href="https://www.github.com/" class="icon" target="_blank" title="github"><img src="github32.png"/></a>
+        <a href="https://www.linkedin.com/" class="icon" target="_blank" title="linkedin"><img src="linkedin32.png"/></a>
+        <a href="mailto:blabla@gmail.com" class="icon" target="_blank" title="Mail"><img src="envelope.png"/></a>
     </div>
 
 </body>

@@ -9,10 +9,7 @@ body {
 body,
 a,
 #navigation,
-#footer,
-#shareBtn,
-#sharelinks
- {
+#footer {
   transition: 0.4s;
 }
 
@@ -73,12 +70,16 @@ a,
   max-width: 850px;
   padding: 20px;
   top: 0;
-  opacity: 0.95;
+  opacity: 0.9;
   z-index: 1;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+}
+
+#navigation:hover{
+  opacity: 1;
 }
 
 #brand {
@@ -168,7 +169,7 @@ h3 {
   position: fixed;
   padding: 10px 0;
   z-index: 1;
-  opacity: 0.95;
+  opacity: 0.8;
   bottom: 0;
   width: 100%;
   max-width: 850px;
@@ -183,6 +184,10 @@ h3 {
   text-decoration: none;
   padding: 0 10px;
   cursor: pointer;
+}
+
+#footer:hover{
+  opacity: 1;
 }
 
 .body-dark .icon {
@@ -222,14 +227,16 @@ h3 {
 /* scroll to top button ends */
 
 /* share button code starts*/
+
 #shareBtn{
   position: fixed;
   top: 85px; /* Place the button at the bottom of the page */
-  right: 35px; /* Place the button 30px from the right */
+  right: 22.5px; /* Place the button 30px from the right */
   z-index: 99;
-  opacity: 0.9;
+  opacity: 0.7;
   background-color: transparent;
-  border-style: none;
+  border: none;
+  padding: 0;
   outline: 0;
 }
 
@@ -243,16 +250,25 @@ h3 {
   }
 }
 
+#shareBtn:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+
 #sharelinks{
   position: fixed;
   display:none;
-  top: 125px; /* Place the button at the bottom of the page */
-  right: 35px; /* Place the button 30px from the right */
+  top: 115px; /* Place the button at the bottom of the page */
+  right: 22.5px; /* Place the button 30px from the right */
   z-index: 99;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  /* animate down */
+  opacity: 0.7;
+}
+
+#sharelinks:hover{
+  opacity: 1;
 }
 
 .body-dark #sharelinks {
