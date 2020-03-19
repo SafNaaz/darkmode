@@ -145,6 +145,7 @@ function buildURI(item) {
     } else {
         item.setAttribute('href', item.href + window.location.href);
     }
+    item.onclick = null;
 }
 
 /* share button - ends*/
