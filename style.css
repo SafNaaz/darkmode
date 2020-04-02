@@ -154,7 +154,8 @@ h2 {
 .text {
   text-indent: 50px;
   padding: 0 20px;
-  line-height:20pt;
+  line-height: 1.6;
+  text-align: justify;
 }
 
 h3 {
