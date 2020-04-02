@@ -218,7 +218,7 @@ h3 {
 @media (min-width: 1100px) {
   #goToTopBtn {
     bottom: 50px; /* Place the button at the bottom of the page */
-    right: 250px;
+    right: 272.5px;
   }
 }
 
@@ -246,7 +246,7 @@ h3 {
 
 @media (min-width: 1100px) {
   #shareBtn {
-    right: 250px;
+    right: 272.5px;
   }
 }
 
