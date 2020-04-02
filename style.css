@@ -1,9 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   max-width: 850px;
   text-align: left;
   margin: auto;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body,
@@ -79,7 +85,7 @@ a,
   box-sizing: border-box;
 }
 
-#navigation:hover{
+#navigation:hover {
   opacity: 1;
 }
 
@@ -132,7 +138,12 @@ a,
 
 /* navigator start */
 
+#navigator ol {
+  padding-left: 40px;
+}
+
 #navigator a {
+  margin: auto;
   text-decoration: none;
 }
 
@@ -144,7 +155,7 @@ a,
 /* navigator end */
 
 #header {
-  margin-top: 70px;
+  margin: 70px auto 20px;
 }
 
 h2 {
@@ -189,7 +200,7 @@ h3 {
   cursor: pointer;
 }
 
-#footer:hover{
+#footer:hover {
   opacity: 1;
 }
 
@@ -231,14 +242,13 @@ h3 {
 
 /* share button code starts*/
 
-#shareBtn{
+#shareBtn {
   position: fixed;
   top: 85px; /* Place the button at the bottom of the page */
   right: 22.5px; /* Place the button 30px from the right */
   z-index: 99;
   background-color: transparent;
   border: none;
-  padding: 0;
   outline: 0;
 }
 
@@ -252,13 +262,13 @@ h3 {
   }
 }
 
-#shareBtn:hover{
+#shareBtn:hover {
   cursor: pointer;
 }
 
-#sharelinks{
+#sharelinks {
   position: fixed;
-  display:none;
+  display: none;
   top: 115px; /* Place the button at the bottom of the page */
   right: 22.5px; /* Place the button 30px from the right */
   z-index: 99;
@@ -271,15 +281,14 @@ h3 {
   filter: invert(100%);
 }
 
-.sharelink{
-  padding: 5px 0;
+.sharelink {
+  margin: 5px 0;
 }
 
 @media (min-width: 1100px) {
   #sharelinks {
-    right: 250px;
+    right: 272.5px;
   }
 }
 
 /* share button code ends*/
-
