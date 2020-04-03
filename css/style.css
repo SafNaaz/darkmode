@@ -228,6 +228,12 @@ h3 {
   opacity: 0.7;
 }
 
+@media (min-width: 1024px) {
+  #goToTopBtn {
+    right: 105px;
+  }
+}
+
 @media (min-width: 1100px) {
   #goToTopBtn {
     bottom: 50px; /* Place the button at the bottom of the page */
@@ -256,11 +262,18 @@ h3 {
   filter: invert(100%);
 }
 
+@media (min-width: 1024px) {
+  #shareBtn {
+    right: 105px;
+  }
+}
+
 @media (min-width: 1100px) {
   #shareBtn {
     right: 272.5px;
   }
 }
+
 
 #shareBtn:hover {
   cursor: pointer;
@@ -285,10 +298,18 @@ h3 {
   margin: 5px 0;
 }
 
+@media (min-width: 1024px) {
+  #sharelinks {
+    right: 105px;
+  }
+}
+
 @media (min-width: 1100px) {
   #sharelinks {
     right: 272.5px;
   }
 }
+
+
 
 /* share button code ends*/
