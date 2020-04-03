@@ -12,12 +12,12 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body,
+/*body,
 a,
 #navigation,
 #footer {
   transition: 0.4s;
-}
+}*/
 
 .body-dark {
   --dark-background-color: #202020;
@@ -176,7 +176,7 @@ h3 {
   position: sticky;
   top: 0px;
   opacity: 0.9;
-  transition: 0.4s;
+  /*transition: 0.4s;*/
 }
 
 #footer {
